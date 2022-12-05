@@ -20,7 +20,7 @@ with st.form(key='diabetes-pred-form'):
     col1, col2 = st.columns(2)
     
     arnes = col1.slider(label='Tamaño del arnés:', min_value=0, max_value=100)
-    botas = col2.text_input(label='Tamaño de la Bota:')
+    botas = col2.text_input(label='Tamaño de la Bota:', value =0)
     submit = st.form_submit_button(label='Check') 
     
     arnes = int(arnes) 
